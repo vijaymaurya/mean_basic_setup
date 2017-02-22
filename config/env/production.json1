@@ -1,0 +1,42 @@
+ {
+    // This is your MYSQL Database configuration
+    db: {
+        name: "new_crownit",
+        password: "root",
+        username: "root",
+        host: "localhost",
+        port: 3306
+    },
+    redis:{
+        host:"127.0.0.1",
+        port:"6379"
+    },
+     cassandra : {
+       host:'127.0.0.1',
+       database:'crownit',
+       port:'27017',
+       username:'',
+       password:''
+   },
+    app: {
+        name: "Testing App - development"
+    },
+    rabbitMq : {
+        host: 'localhost', 
+        port: 5672, 
+        login: 'guest', 
+        password: 'guest', 
+        connectionTimeout: 10000, 
+        authMechanism: 'AMQPLAIN', 
+        vhost: '/', 
+        noDelay: true, 
+        ssl: { 
+                enabled : false
+            }
+    },
+    mongo : {
+        host:'localhost',
+        database:'USER_DATA',
+        port:'27017'
+    },
+}

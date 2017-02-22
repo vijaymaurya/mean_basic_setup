@@ -1,0 +1,16 @@
+{
+    "name": "billProcessing",
+    "description": "bill processing module, handling queuing operations for bill processing",
+    "repository": "https://harshitjain2005@bitbucket.org/harshitjain2005/billprocess_v2.git",
+    "logo": "https://raw.githubusercontent.com/jpotts18/mean-stack-relational/master/public/img/m_logo.png",
+    "keywords": ["node", "express", "static"],
+    "env": {
+        "WEB_CONCURRENCY": {
+            "description": "The number of processes to run.",
+            "value": "1"
+        }
+    },
+    "addons": [
+        "heroku-postgresql:hobby-dev"
+    ]
+}

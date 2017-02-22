@@ -1,0 +1,243 @@
+/* Space out content a bit */
+body {
+    padding-bottom: 20px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+.nav>li.active>a {
+text-decoration: none;
+background-color: #eee;
+}
+
+
+.banner_section_outer .bx-viewport{
+    border: 0;
+    left: 0;
+    box-shadow: none;
+}
+.mobile_app{
+    display: inline-block;
+    margin-top: 30px;
+    width: 320px;
+    background: url(../images/mobile_background.png) no-repeat;
+    background-size: 100%;
+    padding: 50px 16px 72px;
+    height: 610px;
+}
+.mobile_app .mobile_app_inner{
+    height: 100%;
+    position: relative;
+}
+.mobile_app .mobile_app_inner .mCSB_container_wrapper{
+    margin-right: 0;
+}
+.mobile_app .mobile_app_inner .mCSB_container_wrapper > .mCSB_container{
+    padding-right: 0;
+}
+.mobile_app .banner_section .slide img{
+    width: 100%;
+}
+.banner_section_outer .bx-wrapper{
+    margin-bottom: 0;
+}
+.banner_section_outer .bx-wrapper .bx-pager{
+    bottom: 0;
+}
+.banner_section_outer .category_section{
+    background: #dddee3;
+    padding-bottom: 10px;
+}
+.banner_section_outer .category_section .category_box{
+    padding: 0;
+    border: 1px solid #dddee3;
+    background: #fff;
+}
+.banner_section_outer .category_section .category_box a{
+    display: block;
+    color: #777;
+    text-decoration: none;
+}
+.banner_section_outer .category_section .category_box a img{
+    width: 80%;
+    padding: 10px;
+    padding-bottom: 5px;
+}
+.banner_section_outer .category_section .category_box a p{
+    margin-bottom: 0;
+    font-size: 11px;
+    padding-bottom: 2px;
+    white-space: nowrap;
+}
+.banner_section_outer .smart_message{
+    background: #dbb515;
+    padding: 15px 10px;
+}
+.banner_section_outer .smart_message p{
+    margin-bottom: 0;
+    color: #f4f4f4;
+    font-size: 13px;
+    text-align: left;
+}
+.banner_section_outer .mission_outer_box{
+    padding: 8px;
+    background: #dddee3;
+}
+.banner_section_outer .mission_outer_box .mission_box{
+    background: #fff;
+    border-radius: 5px;
+    text-align: left;
+    padding: 15px 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.banner_section_outer .mission_outer_box .mission_box:last-child{
+    margin-bottom: 0;
+}
+.banner_section_outer .mission_outer_box .mission_box h2{
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    margin: 0;
+    margin-bottom: 7px;
+}
+.banner_section_outer .mission_outer_box .mission_box p{
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+.banner_section_outer .mission_outer_box .mission_box p em{
+    color: #d39f70;
+    font-style: normal;
+    float: left;
+}
+.banner_section_outer .mission_outer_box .mission_box p span{
+    color: #666;
+    float: left;
+    margin-left: 2px;
+}
+.banner_section_outer .mission_outer_box .mission_box p span img{
+    float: left;
+    margin: 0 3px 0 2px;
+}
+.banner_section_outer .mission_outer_box .mission_box .progress_box_outer .progress_box{
+    height: 10px;
+    border-radius: 10px;
+    background: #ddd;
+    position: relative;
+    width: 80%;
+    float: left;
+    margin: 3px 0;
+}
+.banner_section_outer .mission_outer_box .mission_box .progress_box_outer .progress_box span{
+    display: block;
+    height: 10px;
+    width: 0;
+    background: #92ba3f;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.banner_section_outer .mission_outer_box .mission_box .progress_box_outer .progress_count{
+    width: 20%;
+    float: right;
+    text-align: right;
+    margin-bottom: 0;
+    color: #ccc;
+}
+.banner_section_outer .mission_outer_box .mission_box .expiry_date{
+    margin-top: 8px;
+}
+.banner_section_outer .mission_outer_box .mission_box .expiry_date p{
+    margin-bottom: 0;
+    color: #829963;
+}
+.banner_section_outer .mission_outer_box .mission_box .expired_img{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    width: 25px;
+}
+.mobile_app .mobile_app_inner .default_logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+}
+

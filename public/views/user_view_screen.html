@@ -1,0 +1,77 @@
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">User Screens</h1>
+    </div>
+    <!-- /.col-lg-12 -->
+</div>
+<!-- /.row -->
+<div class="row">
+    <div class="col-lg-5">
+        <div class="form-group">
+            <label>Enter User Id</label>
+            <input type="text" ng-model="userId" class="form-control">
+        </div>
+    </div>
+    <div class="col-lg-1">
+        <div class="form-group">
+            <label class="show">&nbsp;</label>
+            <button class="btn btn-success" ng-model="userScreen" ng-click="showScreen = true; postUserVal()">Go</button>
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="form-group">
+            <label>Select Screen</label>
+            <select class="form-control">
+                <option>Home</option>
+                <option>Screen 2</option>
+                <option>Screen 3</option>
+                <option>Screen 4</option>
+            </select>
+        </div>
+    </div>
+    <!-- /.col-lg-12 -->
+</div>
+<!-- /.row -->
+<div class="row">
+    <div class="col-xs-12 text-center banner_section_outer">
+        <div class="mobile_app">
+            <div class="mobile_app_inner" ng-if="showScreen!=true">
+                <img src="images/logo.png" class="default_logo">
+            </div>
+            <div class="mobile_app_inner" ng-scrollbars ng-if="showScreen">
+                <div class="banner_section" ng-model="bannerSlider" bx-slider>
+                    <div class="slide" ng-repeat="banner in mobileBanner.promotions">
+                        <img ng-src="{{banner.banner}}">
+                    </div>
+                </div>
+                <div class="category_section clearfix">
+                    <div class="col-xs-3 category_box" ng-repeat="cate in categories.marketingGroups">
+                        <a href="#">
+                            <img ng-src="images/{{cate.image}}">
+                            <p>{{cate.name}}</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="smart_message">
+                    <p>{{smartmessage.message}}</p>
+                </div>
+                <div class="mission_outer_box">
+                    <div class="mission_box clearfix" ng-repeat="mission in missions.data">
+                        <img src="images/tick_patch.png" class="expired_img" ng-if="{{mission.expiryDateText=='Completed'}}">
+                        <h2>{{mission.name}}</h2>
+                        <p class="clearfix"><em>Win</em> <span ng-repeat="rewards in mission.prizes"><img src="{{rewards.image}}"> {{rewards.name}} {{rewards.reward_name}}</span></p>
+                        <div class="progress_box_outer clearfix">
+                            <div class="progress_box">
+                                <span style="width:{{100/mission.totalTask*mission.taskCompleted}}%"></span>
+                            </div>
+                            <p class="progress_count">{{mission.taskCompleted}}/{{mission.totalTask}}</p>
+                        </div>
+                        <div class="expiry_date">
+                            <p>{{mission.expiryDateText}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
